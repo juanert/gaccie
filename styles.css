@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+/* Generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bodoni Moda", serif;
+}
+
+.responsive {
+  display: none;
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Barra de navegación */
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 5px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a:visited,
+a:link,
+a {
+  color: black;
+}
+
+/* Primera sección */
+.hero {
+  background-image: url("./imagenes/hero.jfif");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  padding: 30px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.hero p {
+  position: sticky;
+  bottom: 100px;
+}
+
+.hero div {
+  display: flex;
+  gap: 30px;
+  position: sticky;
+  bottom: 30px;
+}
+
+.hero button {
+  padding: 10px 30px;
+  color: black;
+  background-color: white;
+  border: none;
+  font-weight: 600;
+}
+
+/* Sección de hombres */
+.men {
+  padding: 20px;
+  gap: 20px;
+}
+
+.man-fondo1 {
+  background-image: url("./imagenes/man2.jfif");
+}
+
+.man-fondo2 {
+  background-image: url("./imagenes/man1.webp");
+}
+
+.man {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.man div {
+  position: sticky;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0 30px 0;
+}
+
+.man button {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Sección de destacados */
+.hightlights {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.women {
+  gap: 20px;
+}
+
+.woman {
+  width: 100%;
+}
+
+.women div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.women div h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.women div p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+/* Responsive */
+@media only screen and (min-width: 768px) {
+  .responsive {
+    display: flex;
+  }
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .woman {
+    width: 65%;
+  }
+}
